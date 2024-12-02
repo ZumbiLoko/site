@@ -1,22 +1,22 @@
-HTTrack3.49-2+htsswf+htsjava launched on Mon, 02 Dec 2024 14:31:56 at https://meurag.wixsite.com/ragnasony +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
-(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://meurag.wixsite.com/ragnasony -O1 "C:\Meus Sites\ragnasony" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 02 Dec 2024 14:41:11 at https://meurag.wixsite.com/ragnasony +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qiC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://meurag.wixsite.com/ragnasony -O1 "C:\Meus Sites\ragnasony" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
 
 Information, Warnings and Errors reported for this mirror:
 note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
 	such as username/password authentication for websites mirrored in this project
 	do not share these files/folders if you want these information to remain private
 
-14:32:06	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/c (from https://meurag.wixsite.com/ragnasony)
-14:32:06	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/t (from https://meurag.wixsite.com/ragnasony)
-14:32:06	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/ (from https://meurag.wixsite.com/ragnasony)
-14:32:10	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/sitemap.xml (from https://meurag.wixsite.com/ragnasony)
-14:32:10	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/feed.xml (from https://meurag.wixsite.com/ragnasony)
-14:32:10	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/decodeURIComponent(e (from https://meurag.wixsite.com/ragnasony)
-14:32:10	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/ragnasony/c (from https://meurag.wixsite.com/ragnasony/painel-de-controle)
-14:32:10	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/ragnasony/t (from https://meurag.wixsite.com/ragnasony/painel-de-controle)
-14:32:10	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/ragnasony/robots.txt (from https://meurag.wixsite.com/ragnasony/painel-de-controle)
-14:32:10	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/ragnasony/feed.xml (from https://meurag.wixsite.com/ragnasony/painel-de-controle)
-14:32:10	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/ragnasony/decodeURIComponent(e (from https://meurag.wixsite.com/ragnasony/painel-de-controle)
+14:41:50	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/c (from https://meurag.wixsite.com/ragnasony)
+14:41:53	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/t (from https://meurag.wixsite.com/ragnasony)
+14:43:14	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/ (from https://meurag.wixsite.com/ragnasony)
+14:43:17	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/sitemap.xml (from https://meurag.wixsite.com/ragnasony)
+14:43:17	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/feed.xml (from https://meurag.wixsite.com/ragnasony)
+14:43:17	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/decodeURIComponent(e (from https://meurag.wixsite.com/ragnasony)
+14:43:17	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/ragnasony/c (from https://meurag.wixsite.com/ragnasony/painel-de-controle)
+14:43:17	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/ragnasony/t (from https://meurag.wixsite.com/ragnasony/painel-de-controle)
+14:43:17	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/ragnasony/robots.txt (from https://meurag.wixsite.com/ragnasony/painel-de-controle)
+14:43:17	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/ragnasony/feed.xml (from https://meurag.wixsite.com/ragnasony/painel-de-controle)
+14:43:17	Error: 	"Not Found" (404) at link https://meurag.wixsite.com/ragnasony/decodeURIComponent(e (from https://meurag.wixsite.com/ragnasony/painel-de-controle)
 
-HTTrack Website Copier/3.49-2 mirror complete in 14 seconds : 33 links scanned, 21 files written (2245969 bytes overall) [1112851 bytes received at 79489 bytes/sec], 1681445 bytes transferred using HTTP compression in 25 files, ratio 28%, 1.1 requests per connection
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 6 seconds : 33 links scanned, 21 files written (2245969 bytes overall), 1 files updated [62068 bytes received at 492 bytes/sec], 92849 bytes transferred using HTTP compression in 12 files, ratio 33%
 (11 errors, 0 warnings, 0 messages)
