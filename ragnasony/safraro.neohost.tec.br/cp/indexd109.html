@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+<!-- Mirrored from safraro.neohost.tec.br/cp/?module=ranking&action=death by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2024 15:06:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+      Flux Control Panel: Death Ranking
+    </title>
+    <link href="themes/default2/css/flux/unitip.css" rel="stylesheet" type="text/css" media="screen" title="" charset="utf-8" />
+    <link href="themes/default2/css/eadev.min.css" rel="stylesheet" type="text/css" media="screen" title="" charset="utf-8" />
+    <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="themes/default2/js/flux.datefields.js"></script>
+    <script type="text/javascript" src="themes/default2/js/flux.unitip.js"></script>
+    <script type="text/javascript" src="themes/default2/js/eadev.min.js"></script>
+    <script type="text/javascript" src="themes/default2/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript">
+    //<![CDATA[
+                        $(document).ready(function(){
+                                AOS.init({
+                                        offset: 200,
+                                        duration: 1200,
+                                });
+                                $('.money-input').keyup(function() {
+                                        var creditValue = parseInt($(this).val() / 1, 10);
+                                        if (isNaN(creditValue))
+                                                $('.credit-input').val('?');
+                                        else
+                                                $('.credit-input').val(creditValue);
+                                }).keyup();
+                                $('.credit-input').keyup(function() {
+                                        var moneyValue = parseFloat($(this).val() * 1);
+                                        if (isNaN(moneyValue))
+                                                $('.money-input').val('?');
+                                        else
+                                                $('.money-input').val(moneyValue.toFixed(2));
+                                }).keyup();
+                                processDateFields();
+                        });
+                        function reload(){
+                                window.location.href = 'indexd109.html?module=ranking&amp;action=death';
+                        }
+    //]]>
+    </script>
+    <script type="text/javascript">
+    //<![CDATA[
+                        function updatePreferredServer(sel){
+                                var preferred = sel.options[sel.selectedIndex].value;
+                                document.preferred_server_form.preferred_server.value = preferred;
+                                document.preferred_server_form.submit();
+                        }
+                        function updatePreferredTheme(sel){
+                                var preferred = sel.options[sel.selectedIndex].value;
+                                document.preferred_theme_form.preferred_theme.value = preferred;
+                                document.preferred_theme_form.submit();
+                        }
+                        var spinner = new Image();
+                        spinner.src = 'themes/default2/img/spinner.gif';
+                        function refreshSecurityCode(imgSelector){
+                                $(imgSelector).attr('src', spinner.src);
+                                var clean = false;
+                                var image = new Image();
+                                image.src = "/cp/?module=captcha"+(clean ? '?nocache=' : '&nocache=')+Math.random();
+                                $(imgSelector).attr('src', image.src);
+                        }
+                        function toggleSearchForm() {
+                                $('.search-form').slideToggle('fast');
+                        }
+    //]]>
+    </script>
+    <style>
+    <![CDATA[
+                    .ahover {
+                        color: #291712;
+                    }
+                    .ahover:hover {
+                        color: #006C91 !important;
+                    }
+    ]]>
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <div class="container">
+        <ul>
+          <li>Servidor <img src="themes/default2/img/online.png" />
+          </li>
+          <li>
+            <div class="players-online">
+              0
+            </div>
+          </li>
+          <li>WoE <img src="themes/default2/img/offline.png" />
+          </li>
+        </ul><a class="panel-button" href="indexcaa6.html?module=account&amp;action=view">PAINEL DE CONTROLE</a> <!--<div class="audio-controls">
+                        <audio id="audio" autoplay loop src="/cp/themes/default2/img/prontera.mp3"></audio>
+                        <button class="fa fa-volume-up"></button>
+                </div>-->
+      </div>
+    </div>
+    <div class="slider spacer">
+      <div class="main-slider">
+        <div class="slide" style="background:url(themes/default2/img/slider-render-1.png) center top no-repeat"></div>
+        <div class="slide" style="background:url(themes/default2/img/slider-render-3.png) center top no-repeat"></div>
+        <div class="slide" style="background:url(themes/default2/img/slider-render-4.png) center top no-repeat"></div>
+      </div>
+    </div>
+    <div class="container navigation">
+      <div class="row">
+        <div class="col text-right">
+          <a class="ahover" href="indexd1b9.html?module=main">Início</a> <a class="ahover" href="index4393.html?module=main&amp;action=info">Informações</a> <a class="ahover" href="index275c.html?module=main&amp;action=downloads">Downloads</a>
+        </div>
+        <div class="col-sm-3 text-center">
+          <a class="logo" href="indexd1b9.html?module=main"><img src="themes/default2/img/logo.png" alt="" /></a>
+        </div>
+        <div class="col">
+          <a class="ahover" href="indexfb45.html?module=ranking&amp;action=character">Rankings</a> <a class="ahover" href="https://ragnaplace.com/pt/bro/item/">Data-Base</a> <a class="ahover" href="indexd9fc.html?module=main&amp;action=doar">Doações</a> <a class="ahover" href="https://api.whatsapp.com/send/?phone=48984505489&amp;text&amp;type=phone_number&amp;app_absent=0">Suporte</a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="container main">
+        <div class="sub-nav rankingdeath">
+          <div class="submenu">
+            <div class="container">
+              <div id="submenu">
+                <b>Menu:</b> <a href="indexfb45.html?module=ranking&amp;action=character" class="sub-menu-item">Characters</a> | <a href="indexd109.html?module=ranking&amp;action=death" class="sub-menu-item current-sub-menu">Deaths</a> | <a href="index6378.html?module=ranking&amp;action=alchemist" class="sub-menu-item">Alchemists</a> | <a href="indexeb75.html?module=ranking&amp;action=blacksmith" class="sub-menu-item">Blacksmiths</a> | <a href="indexc7c9.html?module=ranking&amp;action=homunculus" class="sub-menu-item">Homunculus</a> | <a href="index34f9.html?module=ranking&amp;action=mvp" class="sub-menu-item">MVPs</a> | <a href="indexe5a7.html?module=ranking&amp;action=guild" class="sub-menu-item">Guilds</a> | <a href="index2bfe.html?module=ranking&amp;action=zeny" class="sub-menu-item">Zeny</a> | <a href="index538e.html?module=ranking&amp;action=pvp" class="sub-menu-item">PvP</a> | <a href="indexa588.html?module=ranking&amp;action=mvp_rank" class="sub-menu-item">MvP</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="account-page">
+          <h2>
+            Death Ranking
+          </h2>
+          <h3>
+            Top 20 Most Killed Characters on FluxRO
+          </h3>
+          <form action="#" method="get" class="search-form2">
+            <input type="hidden" name="module" value="ranking" /> <input type="hidden" name="action" value="death" />
+            <p>
+              <label for="jobclass">Filter by job class:</label> <select name="jobclass" id="jobclass">
+                <option value="" selected="selected">
+                  All
+                </option>
+                <option value="0">
+                  Novice
+                </option>
+                <option value="1">
+                  Swordsman
+                </option>
+                <option value="2">
+                  Mage
+                </option>
+                <option value="3">
+                  Archer
+                </option>
+                <option value="4">
+                  Acolyte
+                </option>
+                <option value="5">
+                  Merchant
+                </option>
+                <option value="6">
+                  Thief
+                </option>
+                <option value="7">
+                  Knight
+                </option>
+                <option value="8">
+                  Priest
+                </option>
+                <option value="9">
+                  Wizard
+                </option>
+                <option value="10">
+                  Blacksmith
+                </option>
+                <option value="11">
+                  Hunter
+                </option>
+                <option value="12">
+                  Assassin
+                </option>
+                <option value="14">
+                  Crusader
+                </option>
+                <option value="15">
+                  Monk
+                </option>
+                <option value="16">
+                  Sage
+                </option>
+                <option value="17">
+                  Rogue
+                </option>
+                <option value="18">
+                  Alchemist
+                </option>
+                <option value="19">
+                  Bard
+                </option>
+                <option value="20">
+                  Dancer
+                </option>
+                <option value="22">
+                  Wedding
+                </option>
+                <option value="23">
+                  Super Novice
+                </option>
+                <option value="24">
+                  Gunslinger
+                </option>
+                <option value="25">
+                  Ninja
+                </option>
+                <option value="26">
+                  Xmas
+                </option>
+                <option value="27">
+                  Summer
+                </option>
+                <option value="28">
+                  Hanbok
+                </option>
+                <option value="29">
+                  Oktoberfest
+                </option>
+                <option value="4001">
+                  High Novice
+                </option>
+                <option value="4002">
+                  High Swordsman
+                </option>
+                <option value="4003">
+                  High Mage
+                </option>
+                <option value="4004">
+                  High Archer
+                </option>
+                <option value="4005">
+                  High Acolyte
+                </option>
+                <option value="4006">
+                  High Merchant
+                </option>
+                <option value="4007">
+                  High Thief
+                </option>
+                <option value="4008">
+                  Lord Knight
+                </option>
+                <option value="4009">
+                  High Priest
+                </option>
+                <option value="4010">
+                  High Wizard
+                </option>
+                <option value="4011">
+                  Whitesmith
+                </option>
+                <option value="4012">
+                  Sniper
+                </option>
+                <option value="4013">
+                  Assassin Cross
+                </option>
+                <option value="4015">
+                  Paladin
+                </option>
+                <option value="4016">
+                  Champion
+                </option>
+                <option value="4017">
+                  Professor
+                </option>
+                <option value="4018">
+                  Stalker
+                </option>
+                <option value="4019">
+                  Creator
+                </option>
+                <option value="4020">
+                  Clown
+                </option>
+                <option value="4021">
+                  Gypsy
+                </option>
+                <option value="4023">
+                  Baby
+                </option>
+                <option value="4024">
+                  Baby Swordsman
+                </option>
+                <option value="4025">
+                  Baby Mage
+                </option>
+                <option value="4026">
+                  Baby Archer
+                </option>
+                <option value="4027">
+                  Baby Acolyte
+                </option>
+                <option value="4028">
+                  Baby Merchant
+                </option>
+                <option value="4029">
+                  Baby Thief
+                </option>
+                <option value="4030">
+                  Baby Knight
+                </option>
+                <option value="4031">
+                  Baby Priest
+                </option>
+                <option value="4032">
+                  Baby Wizard
+                </option>
+                <option value="4033">
+                  Baby Blacksmith
+                </option>
+                <option value="4034">
+                  Baby Hunter
+                </option>
+                <option value="4035">
+                  Baby Assassin
+                </option>
+                <option value="4037">
+                  Baby Crusader
+                </option>
+                <option value="4038">
+                  Baby Monk
+                </option>
+                <option value="4039">
+                  Baby Sage
+                </option>
+                <option value="4040">
+                  Baby Rogue
+                </option>
+                <option value="4041">
+                  Baby Alchemist
+                </option>
+                <option value="4042">
+                  Baby Bard
+                </option>
+                <option value="4043">
+                  Baby Dancer
+                </option>
+                <option value="4045">
+                  Super Baby
+                </option>
+                <option value="4046">
+                  Taekwon
+                </option>
+                <option value="4047">
+                  Star Gladiator
+                </option>
+                <option value="4049">
+                  Soul Linker
+                </option>
+                <option value="4050">
+                  Jiang Shi
+                </option>
+                <option value="4051">
+                  Death Knight
+                </option>
+                <option value="4052">
+                  Dark Collector
+                </option>
+                <option value="4054">
+                  Rune Knight
+                </option>
+                <option value="4055">
+                  Warlock
+                </option>
+                <option value="4056">
+                  Ranger
+                </option>
+                <option value="4057">
+                  Arch Bishop
+                </option>
+                <option value="4058">
+                  Mechanic
+                </option>
+                <option value="4059">
+                  Guillotine Cross
+                </option>
+                <option value="4060">
+                  Rune Knight+
+                </option>
+                <option value="4061">
+                  Warlock+
+                </option>
+                <option value="4062">
+                  Ranger+
+                </option>
+                <option value="4063">
+                  Arch Bishop+
+                </option>
+                <option value="4064">
+                  Mechanic+
+                </option>
+                <option value="4065">
+                  Guillotine Cross+
+                </option>
+                <option value="4066">
+                  Royal Guard
+                </option>
+                <option value="4067">
+                  Sorcerer
+                </option>
+                <option value="4068">
+                  Minstrel
+                </option>
+                <option value="4069">
+                  Wanderer
+                </option>
+                <option value="4070">
+                  Sura
+                </option>
+                <option value="4071">
+                  Genetic
+                </option>
+                <option value="4072">
+                  Shadow Chaser
+                </option>
+                <option value="4073">
+                  Royal Guard+
+                </option>
+                <option value="4074">
+                  Sorcerer+
+                </option>
+                <option value="4075">
+                  Minstrel+
+                </option>
+                <option value="4076">
+                  Wanderer+
+                </option>
+                <option value="4077">
+                  Sura+
+                </option>
+                <option value="4078">
+                  Genetic+
+                </option>
+                <option value="4079">
+                  Shadow Chaser+
+                </option>
+                <option value="4096">
+                  Baby Rune Knight
+                </option>
+                <option value="4097">
+                  Baby Warlock
+                </option>
+                <option value="4098">
+                  Baby Ranger
+                </option>
+                <option value="4099">
+                  Baby Arch Bishop
+                </option>
+                <option value="4100">
+                  Baby Mechanic
+                </option>
+                <option value="4101">
+                  Baby Guillotine Cross
+                </option>
+                <option value="4102">
+                  Baby Royal Guard
+                </option>
+                <option value="4103">
+                  Baby Sorcerer
+                </option>
+                <option value="4104">
+                  Baby Minstrel
+                </option>
+                <option value="4105">
+                  Baby Wanderer
+                </option>
+                <option value="4106">
+                  Baby Sura
+                </option>
+                <option value="4107">
+                  Baby Genetic
+                </option>
+                <option value="4108">
+                  Baby Shadow Chaser
+                </option>
+                <option value="4190">
+                  Expanded Super Novice
+                </option>
+                <option value="4191">
+                  Expanded Super Baby
+                </option>
+                <option value="4211">
+                  Kagerou
+                </option>
+                <option value="4212">
+                  Oboro
+                </option>
+                <option value="4215">
+                  Rebellion
+                </option>
+                <option value="4218">
+                  Summoner
+                </option>
+                <option value="4220">
+                  Baby Summoner
+                </option>
+                <option value="4222">
+                  Baby Ninja
+                </option>
+                <option value="4223">
+                  Baby Kagero
+                </option>
+                <option value="4224">
+                  Baby Oboro
+                </option>
+                <option value="4225">
+                  Baby Taekwon
+                </option>
+                <option value="4226">
+                  Baby Star Gladiator
+                </option>
+                <option value="4227">
+                  Baby Soul Linker
+                </option>
+                <option value="4228">
+                  Baby Gunslinger
+                </option>
+                <option value="4229">
+                  Baby Rebellion
+                </option>
+                <option value="4239">
+                  Star Emperor
+                </option>
+                <option value="4240">
+                  Soul Reaper
+                </option>
+                <option value="4241">
+                  Baby Star Emperor
+                </option>
+                <option value="4242">
+                  Baby Soul Reaper
+                </option>
+                <option value="4252">
+                  Dragon Knight
+                </option>
+                <option value="4253">
+                  Meister
+                </option>
+                <option value="4254">
+                  Shadow Cross
+                </option>
+                <option value="4255">
+                  Arch Mage
+                </option>
+                <option value="4256">
+                  Cardinal
+                </option>
+                <option value="4257">
+                  WindHawk
+                </option>
+                <option value="4258">
+                  Imperial Guard
+                </option>
+                <option value="4259">
+                  Biolo
+                </option>
+                <option value="4260">
+                  Abyss Chaser
+                </option>
+                <option value="4261">
+                  Elemental Master
+                </option>
+                <option value="4262">
+                  Inquisitor
+                </option>
+                <option value="4263">
+                  Troubadour
+                </option>
+                <option value="4264">
+                  Trouvere
+                </option>
+              </select> <input type="submit" value="Filter" /> <input type="button" value="Reset" onclick="reload()" />
+            </p>
+          </form>
+          <div class="table-responsive">
+            <table class="horizontal-table">
+              <tr>
+                <th>
+                  Rank
+                </th>
+                <th>
+                  Character Name
+                </th>
+                <th>
+                  Deaths
+                </th>
+                <th>
+                  Job Class
+                </th>
+                <th>
+                  Base Level
+                </th>
+                <th>
+                  Job Level
+                </th>
+                <th colspan="2">
+                  Guild Name
+                </th>
+              </tr>
+              <tr class="top-ranked" title="&lt;strong&gt;Saitama&lt;/strong&gt; is the most killed character!">
+                <td align="right">
+                  1
+                </td>
+                <td>
+                  <strong>Saitama</strong>
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  Assassin Cross
+                </td>
+                <td>
+                  255
+                </td>
+                <td>
+                  120
+                </td>
+                <td colspan="2">
+                  <span class="not-applicable">None</span>
+                </td>
+              </tr>
+              <tr>
+                <td align="right">
+                  2
+                </td>
+                <td>
+                  <strong>GM wiiin</strong>
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  Champion
+                </td>
+                <td>
+                  255
+                </td>
+                <td>
+                  120
+                </td>
+                <td colspan="2">
+                  <span class="not-applicable">None</span>
+                </td>
+              </tr>
+              <tr>
+                <td align="right">
+                  3
+                </td>
+                <td>
+                  <strong>kaos</strong>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  Novice
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  1
+                </td>
+                <td colspan="2">
+                  <span class="not-applicable">None</span>
+                </td>
+              </tr>
+              <tr>
+                <td align="right">
+                  4
+                </td>
+                <td>
+                  <strong>Teacher J</strong>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  Professor
+                </td>
+                <td>
+                  255
+                </td>
+                <td>
+                  120
+                </td>
+                <td colspan="2">
+                  <span class="not-applicable">None</span>
+                </td>
+              </tr>
+              <tr>
+                <td align="right">
+                  5
+                </td>
+                <td>
+                  <strong>wiin shura</strong>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  Assassin Cross
+                </td>
+                <td>
+                  255
+                </td>
+                <td>
+                  120
+                </td>
+                <td colspan="2">
+                  <span class="not-applicable">None</span>
+                </td>
+              </tr>
+              <tr>
+                <td align="right">
+                  6
+                </td>
+                <td>
+                  <strong>PlundueR</strong>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  Novice
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  1
+                </td>
+                <td colspan="2">
+                  <span class="not-applicable">None</span>
+                </td>
+              </tr>
+              <tr class="empty-row">
+                <td align="right">
+                  7
+                </td>
+                <td colspan="8"></td>
+              </tr>
+              <tr class="empty-row">
+                <td align="right">
+                  8
+                </td>
+                <td colspan="8"></td>
+              </tr>
+              <tr class="empty-row">
+                <td align="right">
+                  9
+                </td>
+                <td colspan="8"></td>
+              </tr>
+              <tr class="empty-row">
+                <td align="right">
+                  10
+                </td>
+                <td colspan="8"></td>
+              </tr>
+              <tr class="empty-row">
+                <td align="right">
+                  11
+                </td>
+                <td colspan="8"></td>
+              </tr>
+              <tr class="empty-row">
+                <td align="right">
+                  12
+                </td>
+                <td colspan="8"></td>
+              </tr>
+              <tr class="empty-row">
+                <td align="right">
+                  13
+                </td>
+                <td colspan="8"></td>
+              </tr>
+              <tr class="empty-row">
+                <td align="right">
+                  14
+                </td>
+                <td colspan="8"></td>
+              </tr>
+              <tr class="empty-row">
+                <td align="right">
+                  15
+                </td>
+                <td colspan="8"></td>
+              </tr>
+              <tr class="empty-row">
+                <td align="right">
+                  16
+                </td>
+                <td colspan="8"></td>
+              </tr>
+              <tr class="empty-row">
+                <td align="right">
+                  17
+                </td>
+                <td colspan="8"></td>
+              </tr>
+              <tr class="empty-row">
+                <td align="right">
+                  18
+                </td>
+                <td colspan="8"></td>
+              </tr>
+              <tr class="empty-row">
+                <td align="right">
+                  19
+                </td>
+                <td colspan="8"></td>
+              </tr>
+              <tr class="empty-row">
+                <td align="right">
+                  20
+                </td>
+                <td colspan="8"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <div class="footer-nav">
+              <h4>
+                Links Úteis
+              </h4>
+              <ul>
+                <li>
+                  <a href="indexd1b9.html?module=main">Home</a>
+                </li>
+                <li>
+                  <a href="indexf4a2.html?module=account&amp;action=create">Registrar</a>
+                </li>
+                <li>
+                  <a href="indexdf3b.html?module=main&amp;action=download">Downloads</a>
+                </li>
+                <li>
+                  <a href="index4393.html?module=main&amp;action=info">Informações</a>
+                </li>
+                <li>
+                  <a href="indexfb45.html?module=ranking&amp;action=character">Rankings</a>
+                </li>
+                <li>
+                  <a href="https://discord.com/channels/1311100894669963366/1311100894669963368">Discord</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <h4>
+              Social Links
+            </h4>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/">Facebook</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/">Youtube</a>
+              </li>
+              <li>
+                <a href="https://instagram.com/">Instagram</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/%2F&amp;tabs&amp;width=270&amp;height=214&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=1617016161843836" width="270" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <a href="http://www.ea-dev.com/" target="_blank"><img src="themes/default2/img/eadev.png" alt="EADev" /></a>
+          </div>
+          <div class="col-6">
+            <div class="copyright-text">
+              Copyright 2024!<br />
+              Todos os direitos reservados aos respectivos administradores e a Gravity Co.LTD.<br />
+              <strong>Design: <a href="https://facebook.com/ragnarokbrasilservice/" target="_blank">RBS</a> | Coded: <a href="https://www.ea-dev.com/" target="_blank">eAdev</a></strong>
+            </div>
+          </div>
+          <div class="col-3 text-center">
+            <a href="#"><img src="themes/default2/img/lvy.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+<!-- Mirrored from safraro.neohost.tec.br/cp/?module=ranking&action=death by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2024 15:06:33 GMT -->
+</html>

@@ -1,0 +1,20 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 02 Dec 2024 15:06:08 at https://safraro.neohost.tec.br/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qiC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://safraro.neohost.tec.br/ -O1 "C:\Meus Sites\ragnasony" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+15:06:09	Warning: 	Note: due to https://safraro.neohost.tec.br remote robots.txt rules, links beginning with these path will be forbidden: /item/, /monster/, /vending/ (see in the options to disable this)
+15:06:28	Warning: 	Found for https://safraro.neohost.tec.br/cp/?module=account&action=view
+15:06:28	Warning: 	File has moved from https://safraro.neohost.tec.br/cp/?module=account&action=view to /cp/?module=account&action=login&return_url=%2Fcp%2F%3Fmodule%3Daccount%26action%3Dview
+15:06:32	Warning: 	Found for https://safraro.neohost.tec.br/cp/?module=voteforpoints
+15:06:32	Warning: 	File has moved from https://safraro.neohost.tec.br/cp/?module=voteforpoints to /cp/?module=account&action=login&return_url=%2Fcp%2F%3Fmodule%3Dvoteforpoints
+15:06:33	Error: 	"Not Found" (404) at link https://safraro.neohost.tec.br/cp/themes/default2/img/jobs/.gif (from https://safraro.neohost.tec.br/)
+15:06:33	Error: 	"Not Found" (404) at link https://safraro.neohost.tec.br/cp/?module=main&action=download (from https://safraro.neohost.tec.br/)
+15:06:33	Error: 	"Not Found" (404) at link https://safraro.neohost.tec.br/cp/?module=account%26action=login%26return_url=%2Fcp%2F%3Fmodule%3Daccount%26action%3Dview (from https://safraro.neohost.tec.br/cp/?module=account&action=view)
+15:06:34	Error: 	"Not Found" (404) at link https://safraro.neohost.tec.br/cp/?module=account%26action=login%26return_url=%2Fcp%2F%3Fmodule%3Dvoteforpoints (from https://safraro.neohost.tec.br/cp/?module=voteforpoints)
+
+HTTrack Website Copier/3.49-2 mirror complete in 26 seconds : 98 links scanned, 91 files written (9607663 bytes overall), 92 files updated [8990529 bytes received at 345789 bytes/sec], 887826 bytes transferred using HTTP compression in 30 files, ratio 23%, 14.0 requests per connection
+(4 errors, 5 warnings, 0 messages)

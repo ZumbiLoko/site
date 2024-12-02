@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+<!-- Mirrored from safraro.neohost.tec.br/cp/?module=ranking&action=mvp_rank by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2024 15:06:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+      Flux Control Panel
+    </title>
+    <link href="themes/default2/css/flux/unitip.css" rel="stylesheet" type="text/css" media="screen" title="" charset="utf-8" />
+    <link href="themes/default2/css/eadev.min.css" rel="stylesheet" type="text/css" media="screen" title="" charset="utf-8" />
+    <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="themes/default2/js/flux.datefields.js"></script>
+    <script type="text/javascript" src="themes/default2/js/flux.unitip.js"></script>
+    <script type="text/javascript" src="themes/default2/js/eadev.min.js"></script>
+    <script type="text/javascript" src="themes/default2/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript">
+    //<![CDATA[
+                        $(document).ready(function(){
+                                AOS.init({
+                                        offset: 200,
+                                        duration: 1200,
+                                });
+                                $('.money-input').keyup(function() {
+                                        var creditValue = parseInt($(this).val() / 1, 10);
+                                        if (isNaN(creditValue))
+                                                $('.credit-input').val('?');
+                                        else
+                                                $('.credit-input').val(creditValue);
+                                }).keyup();
+                                $('.credit-input').keyup(function() {
+                                        var moneyValue = parseFloat($(this).val() * 1);
+                                        if (isNaN(moneyValue))
+                                                $('.money-input').val('?');
+                                        else
+                                                $('.money-input').val(moneyValue.toFixed(2));
+                                }).keyup();
+                                processDateFields();
+                        });
+                        function reload(){
+                                window.location.href = 'indexa588.html?module=ranking&amp;action=mvp_rank';
+                        }
+    //]]>
+    </script>
+    <script type="text/javascript">
+    //<![CDATA[
+                        function updatePreferredServer(sel){
+                                var preferred = sel.options[sel.selectedIndex].value;
+                                document.preferred_server_form.preferred_server.value = preferred;
+                                document.preferred_server_form.submit();
+                        }
+                        function updatePreferredTheme(sel){
+                                var preferred = sel.options[sel.selectedIndex].value;
+                                document.preferred_theme_form.preferred_theme.value = preferred;
+                                document.preferred_theme_form.submit();
+                        }
+                        var spinner = new Image();
+                        spinner.src = 'themes/default2/img/spinner.gif';
+                        function refreshSecurityCode(imgSelector){
+                                $(imgSelector).attr('src', spinner.src);
+                                var clean = false;
+                                var image = new Image();
+                                image.src = "/cp/?module=captcha"+(clean ? '?nocache=' : '&nocache=')+Math.random();
+                                $(imgSelector).attr('src', image.src);
+                        }
+                        function toggleSearchForm() {
+                                $('.search-form').slideToggle('fast');
+                        }
+    //]]>
+    </script>
+    <style>
+    <![CDATA[
+                    .ahover {
+                        color: #291712;
+                    }
+                    .ahover:hover {
+                        color: #006C91 !important;
+                    }
+    ]]>
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <div class="container">
+        <ul>
+          <li>Servidor <img src="themes/default2/img/online.png" />
+          </li>
+          <li>
+            <div class="players-online">
+              0
+            </div>
+          </li>
+          <li>WoE <img src="themes/default2/img/offline.png" />
+          </li>
+        </ul><a class="panel-button" href="indexcaa6.html?module=account&amp;action=view">PAINEL DE CONTROLE</a> <!--<div class="audio-controls">
+                        <audio id="audio" autoplay loop src="/cp/themes/default2/img/prontera.mp3"></audio>
+                        <button class="fa fa-volume-up"></button>
+                </div>-->
+      </div>
+    </div>
+    <div class="slider spacer">
+      <div class="main-slider">
+        <div class="slide" style="background:url(themes/default2/img/slider-render-1.png) center top no-repeat"></div>
+        <div class="slide" style="background:url(themes/default2/img/slider-render-3.png) center top no-repeat"></div>
+        <div class="slide" style="background:url(themes/default2/img/slider-render-4.png) center top no-repeat"></div>
+      </div>
+    </div>
+    <div class="container navigation">
+      <div class="row">
+        <div class="col text-right">
+          <a class="ahover" href="indexd1b9.html?module=main">Início</a> <a class="ahover" href="index4393.html?module=main&amp;action=info">Informações</a> <a class="ahover" href="index275c.html?module=main&amp;action=downloads">Downloads</a>
+        </div>
+        <div class="col-sm-3 text-center">
+          <a class="logo" href="indexd1b9.html?module=main"><img src="themes/default2/img/logo.png" alt="" /></a>
+        </div>
+        <div class="col">
+          <a class="ahover" href="indexfb45.html?module=ranking&amp;action=character">Rankings</a> <a class="ahover" href="https://ragnaplace.com/pt/bro/item/">Data-Base</a> <a class="ahover" href="indexd9fc.html?module=main&amp;action=doar">Doações</a> <a class="ahover" href="https://api.whatsapp.com/send/?phone=48984505489&amp;text&amp;type=phone_number&amp;app_absent=0">Suporte</a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="container main">
+        <div class="sub-nav rankingmvp_rank">
+          <div class="submenu">
+            <div class="container">
+              <div id="submenu">
+                <b>Menu:</b> <a href="indexfb45.html?module=ranking&amp;action=character" class="sub-menu-item">Characters</a> | <a href="indexd109.html?module=ranking&amp;action=death" class="sub-menu-item">Deaths</a> | <a href="index6378.html?module=ranking&amp;action=alchemist" class="sub-menu-item">Alchemists</a> | <a href="indexeb75.html?module=ranking&amp;action=blacksmith" class="sub-menu-item">Blacksmiths</a> | <a href="indexc7c9.html?module=ranking&amp;action=homunculus" class="sub-menu-item">Homunculus</a> | <a href="index34f9.html?module=ranking&amp;action=mvp" class="sub-menu-item">MVPs</a> | <a href="indexe5a7.html?module=ranking&amp;action=guild" class="sub-menu-item">Guilds</a> | <a href="index2bfe.html?module=ranking&amp;action=zeny" class="sub-menu-item">Zeny</a> | <a href="index538e.html?module=ranking&amp;action=pvp" class="sub-menu-item">PvP</a> | <a href="indexa588.html?module=ranking&amp;action=mvp_rank" class="sub-menu-item current-sub-menu">MvP</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="account-page">
+          <h2>
+            Ranking MvP
+          </h2>
+          <h3>
+            Top 20 MvP
+          </h3>
+          <table class="horizontal-table">
+            <tr>
+              <th align="center" width="40">
+                Rank
+              </th>
+              <th style="padding-left: 30px;" align="center">
+                Nome
+              </th>
+              <th style="padding-left: 10px;" align="center">
+                Classe
+              </th>
+              <th style="padding-left: 30px;" align="center">
+                Clã
+              </th>
+              <th style="padding-left: 10px;" align="center">
+                Nível
+              </th>
+              <th style="padding-left: 10px;" align="center" width="80">
+                Score
+              </th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <div class="footer-nav">
+              <h4>
+                Links Úteis
+              </h4>
+              <ul>
+                <li>
+                  <a href="indexd1b9.html?module=main">Home</a>
+                </li>
+                <li>
+                  <a href="indexf4a2.html?module=account&amp;action=create">Registrar</a>
+                </li>
+                <li>
+                  <a href="indexdf3b.html?module=main&amp;action=download">Downloads</a>
+                </li>
+                <li>
+                  <a href="index4393.html?module=main&amp;action=info">Informações</a>
+                </li>
+                <li>
+                  <a href="indexfb45.html?module=ranking&amp;action=character">Rankings</a>
+                </li>
+                <li>
+                  <a href="https://discord.com/channels/1311100894669963366/1311100894669963368">Discord</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <h4>
+              Social Links
+            </h4>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/">Facebook</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/">Youtube</a>
+              </li>
+              <li>
+                <a href="https://instagram.com/">Instagram</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/%2F&amp;tabs&amp;width=270&amp;height=214&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=1617016161843836" width="270" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <a href="http://www.ea-dev.com/" target="_blank"><img src="themes/default2/img/eadev.png" alt="EADev" /></a>
+          </div>
+          <div class="col-6">
+            <div class="copyright-text">
+              Copyright 2024!<br />
+              Todos os direitos reservados aos respectivos administradores e a Gravity Co.LTD.<br />
+              <strong>Design: <a href="https://facebook.com/ragnarokbrasilservice/" target="_blank">RBS</a> | Coded: <a href="https://www.ea-dev.com/" target="_blank">eAdev</a></strong>
+            </div>
+          </div>
+          <div class="col-3 text-center">
+            <a href="#"><img src="themes/default2/img/lvy.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+<!-- Mirrored from safraro.neohost.tec.br/cp/?module=ranking&action=mvp_rank by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2024 15:06:34 GMT -->
+</html>
